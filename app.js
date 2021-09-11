@@ -14,3 +14,7 @@ addTask.addEventListener("click", function () {
 	createTaskItem(taskInput.value);
 	taskInput.value = "";
 });
+function myFunction() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+  }
