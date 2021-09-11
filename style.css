@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 header{
 	display:flex;
 	justify-content: center;
