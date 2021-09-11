@@ -121,15 +121,6 @@ nav{
     z-index: 1000;
 }
 
-.modal-backdrop {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 10000000000000000000000000000000000000000;
-    width: 100vw;
-    height: 100vh;
-    background-color:#000000;
-}
 
 .shadow {
     box-shadow: 0 .5rem 1rem var(--ldshadow)!important;
@@ -213,35 +204,13 @@ nav{
     opacity: 0.55;
 }
 
-.heading {
-    font-size: 3rem;
-    display: inline-block;
-    color: var(--vctext)!important;
-    margin-top: 7rem;
-    position: absolute;
-    margin-left: 22rem;
-    font-weight: bold;
- 
-}
 
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.home{
-    padding-top:13rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
 .card{
-	margin:.5rem;
+	margin:2rem;
     background-color: var(--navigationbg)!important;
     border: 1px solid var(--card)!important ;
+	width:35%;
 }
 
 
@@ -250,6 +219,8 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-left: 2rem;
+	margin-right: 2rem;
 
 }
 .card-title{
@@ -259,7 +230,22 @@ p {
 .card-text{
     color:var(--vctext)!important
 }
+
+h1{
+	color:var(--vctext)!important;
+	margin-left:3rem
+
+}
    
+hr{
+	color:var(--vctext)!important
+}
+
+textarea.form-control {
+    min-height: calc(1.5em + (.75rem + 2px));
+    background-color: var(--navigationbg)!important;
+}
+
 :root{
     --black: #000000;
     --white: #ffffff;
@@ -276,7 +262,7 @@ body[data-theme='light']{
     --navigationbg: var(--white);
     --vctext: var(--black);
     --ldshadow: var(--lsblack);
-    --card: var(--cardblack) 
+    --card: var(--cardblack); 
 }
 
 
@@ -284,7 +270,7 @@ body[data-theme='dark']{
     --navigationbg: var(--black);
     --vctext: var(--lightgrey);
     --ldshadow: var(--dswhite);
-    --card: var(--cardwhite)
+    --card: var(--cardwhite);
 }
 
     
