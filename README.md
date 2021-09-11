@@ -28,3 +28,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com/) and L
 For help getting started with the project, view
 [Mozilla's documentation](https://flutter.dev/docs) on Web, which offers tutorials,
 samples, guidance on web development, and a full API reference.
+
+![image](https://user-images.githubusercontent.com/79450140/132942074-fb97abc0-dc68-4705-a868-c4279e6f858d.png)
+![image](https://user-images.githubusercontent.com/79450140/132942100-b55b7705-9aa5-4a13-b5bf-63c51f21aa8f.png)
+
+
