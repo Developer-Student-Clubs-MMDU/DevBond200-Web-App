@@ -25,6 +25,8 @@ textarea {
 	--primary-color: hsl(207, 90%, 54%);
 }
 
+
+
 #header {
 	width: 100%;
 	height: 60px;
@@ -142,7 +144,6 @@ nav{
 .logo2{
  
     height: 82px;
-    padding-left: 15px;
 }
 
 .logo2-darkt{

@@ -20,6 +20,8 @@ changeThemeToDark()
 }   
 });
 
+
+
 function changing(){
 document.getElementById("HTML").setAttribute("data-theme", localStorage.getItem('data-theme')) ;
 if(localStorage.getItem('data-theme')==="dark")
