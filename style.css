@@ -102,3 +102,256 @@ textarea {
 		width: 95%;
 	}
 }
+
+
+
+
+.bg-body{
+    background-color: #fff;
+    background-color: var(--navigationbg)!important;
+}
+
+body{
+    background-color: var(--navigationbg)!important;
+}
+nav{
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1000;
+}
+
+.modal-backdrop {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10000000000000000000000000000000000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color:#000000;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem var(--ldshadow)!important;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo2{
+ 
+    height: 82px;
+    padding-left: 15px;
+}
+
+.logo2-darkt{
+    height: 82px;
+    padding-left: 15px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.button{
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.bg-body{
+    background-color: #fff;
+    background-color: var(--navigationbg)!important;
+}
+
+body{
+    background-color: var(--navigationbg)!important;
+}
+nav{
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem var(--ldshadow)!important;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo2{
+ 
+    height: 82px;
+    padding-left: 15px;
+
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.button{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+}
+
+.row{
+        margin-top:1rem;
+}
+
+.modal-body{
+        position: relative;
+        flex: 1 1 auto;
+        padding: 1rem;
+        padding-top: 0;
+        z-index:100000000000000000;
+}   
+
+.icar{
+    opacity: 0.55;
+}
+
+.heading {
+    font-size: 3rem;
+    display: inline-block;
+    color: var(--vctext)!important;
+    margin-top: 7rem;
+    position: absolute;
+    margin-left: 22rem;
+    font-weight: bold;
+ 
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.home{
+    padding-top:13rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+	margin:.5rem;
+    background-color: var(--navigationbg)!important;
+    border: 1px solid var(--card)!important ;
+}
+
+
+.new{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.card-title{
+    color:#2477f2;
+}
+
+.card-text{
+    color:var(--vctext)!important
+}
+   
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --lightgrey: #e2e8f0 ;
+    --lsblack: rgba(0,0,0,0.15);
+    --dswhite:rgba(255, 245, 245, 0.15);
+    --ltoday: rgb(229, 255, 229);
+    --cardblack: rgba(0,0,0,.125);
+    --cardwhite: rgb(252 252 252 / 33%)
+    
+} 
+
+body[data-theme='light']{
+    --navigationbg: var(--white);
+    --vctext: var(--black);
+    --ldshadow: var(--lsblack);
+    --card: var(--cardblack) 
+}
+
+
+body[data-theme='dark']{
+    --navigationbg: var(--black);
+    --vctext: var(--lightgrey);
+    --ldshadow: var(--dswhite);
+    --card: var(--cardwhite)
+}
+
+    
+* {
+        transition: background-color 0.5s ease, color 1s ease;
+}
+
+.input-group>.form-control, .input-group>.form-select {
+        position: relative;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+}
+
+.position{
+    position:fixed;
+    bottom: 1vh;
+    right:1rem;
+    z-index: 1000;
+}
+
+.darking{
+    position: absolute;
+    opacity: 0;
+}
+
+.darking:checked +.label .ball{
+    transform: translateX(24px);
+
+}
+
+.ball{
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
