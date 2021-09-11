@@ -1,3 +1,5 @@
+
+
 const taskInput = document.getElementById("task-input"),
 	addTask = document.getElementById("task-add"),
 	taskList = document.getElementById("task-list");
@@ -14,3 +16,4 @@ addTask.addEventListener("click", function () {
 	createTaskItem(taskInput.value);
 	taskInput.value = "";
 });
+
