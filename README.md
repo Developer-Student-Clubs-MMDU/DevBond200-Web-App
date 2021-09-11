@@ -15,6 +15,15 @@ More information at [UniversuMM](https://universumm.mmumullana.org/technical.php
 6. Overall Improved Look Of the application
 
 
+## ScreenShots
+
+![image](https://user-images.githubusercontent.com/85797179/132941519-04a36cf6-acfd-4454-9515-833d8a70d9bc.png)
+![image](https://user-images.githubusercontent.com/85797179/132941537-18d4f64c-8b1b-4d1f-be60-f21e6e801914.png)
+![image](https://user-images.githubusercontent.com/85797179/132941546-b3095d3a-a443-4c2c-aa10-5d4adb8f0acd.png)
+![image](https://user-images.githubusercontent.com/85797179/132941549-fc5e5aad-bfdb-4cbe-ac1d-d467d0578600.png)
+
+
+
 
 
 
