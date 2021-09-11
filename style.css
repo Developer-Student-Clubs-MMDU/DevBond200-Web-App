@@ -102,3 +102,32 @@ textarea {
 		width: 95%;
 	}
 }
+.dark-mode {
+	background-color: black;
+	color: white;
+	
+  }
+
+  .dark-mode .task{
+	  background-color: #000;
+  }
+  .dark-mode #task-input{
+	  color: white;
+  }
+
+
+
+#btn{
+	padding: 10px;
+    border: 2px solid white;
+    border-radius: 19px;
+    box-shadow: 2px 1px 17px;
+
+}
+#btn:hover{
+	color: green;
+}
+.container{
+	padding: 33px;
+    padding-left: 700px;
+}
