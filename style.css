@@ -1,104 +1,117 @@
-/* Reset Browser Default CSS */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-li {
-	list-style: none;
-}
-input,
-textarea {
-	border: none;
-	outline: none;
-	font-size: 16px;
-	resize: none;
-}
-body,
-textarea {
-	font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-/* Custom Properties */
-:root {
-	--theme-border: 1px solid #ddd;
-	--primary-color: hsl(207, 90%, 54%);
-}
-
-#header {
-	width: 100%;
-	height: 60px;
-	display: flex;
-	align-items: center;
+header{
+	display:flex;
 	justify-content: center;
-	text-align: center;
-	border-bottom: var(--theme-border);
+	margin: 20px;
+	padding: 5px;
+}
+body {
+  background-color: cadetblue;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
 }
 
-.task-form {
-	margin: 20px auto;
-	padding: 10px;
-	max-width: 400px;
-	width: 95%;
-	height: 160px;
-	border: var(--theme-border);
-	border-radius: 10px;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+  margin: 0 20px;
 }
 
-#task-input {
-	padding: 4px;
-	display: block;
-	width: 100%;
-	height: calc(100% - 35px);
-	background-color: hsl(207, 30%, 90%);
-	border-radius: 4px;
+.todolist {
+  width: 500px;
+  min-height: 300px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px 20px 100px 20px;
+  margin-top: 30px;
+  background-image: radial-gradient(rgb(136, 210, 233), gainsboro);
 }
 
-#task-input:focus {
-	background: none;
-	border: 1px solid var(--primary-color);
+.todolist li {
+  color: rgb(7, 6, 6);
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid white;
+  word-break: break-word;
+}
+li button {
+  float: right;
+  color: rgb(15, 13, 13);
+  margin-left: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  border: 1px solid white;
+  transition: 0.2s all ease-in-out;
 }
 
-#task-add {
-	margin-top: 5px;
-	display: block;
-	width: 100%;
-	height: 30px;
-	background-color: var(--primary-color);
-	color: #fff;
-	border-radius: 4px;
-	cursor: pointer;
+li button:hover {
+  background-color: gainsboro;
+  color: white;
+}
+#inputtask {
+  min-width: 300px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  font-size: 24px;
+  margin-right: 10px;
+  color: rgb(14, 14, 14);
 }
 
-#task-add:active {
-	background-color: hsl(207, 90%, 48%);
+#inputtask:focus {
+  outline: none;
 }
 
-.tasks-wrapper {
-	margin: auto;
-	padding: 12px;
-	width: 80%;
-	border: var(--theme-border);
-	border-radius: 10px;
+#addbutton,
+.clear {
+  color: rgb(118, 103, 133);
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.3s all ease-in-out;
+}
+#addbutton:hover,
+.clear:hover {
+  background-color: rgba(194, 129, 255, 0.253);
+  color: white;
+  transform: scale(0.97);
+}
+.d-none {
+  display: none;
 }
 
-.tasks-wrapper h2 {
-	margin-bottom: 10px;
-	font-size: 1.4rem;
-	font-weight: normal;
-	border-bottom: 1px solid #000;
+li span:focus {
+  background-color: white;
+  color: black;
+  outline: none;
+  padding: 0 5px;
+  display: inline-block;
+  min-width: 300px;
+  max-width: 400px;
 }
 
-.task {
-	margin-top: 6px;
-	padding: 4px;
-	width: 100%;
-	min-height: 26px;
-	background-color: hsl(207, 10%, 95%);
+.link {
+  text-align: center;
+  margin: 20px;
 }
-
-@media screen and (max-width: 500px) {
-	.tasks-wrapper {
-		width: 95%;
-	}
+.link a {
+  color: white;
 }
