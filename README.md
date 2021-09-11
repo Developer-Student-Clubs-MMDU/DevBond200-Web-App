@@ -4,6 +4,20 @@ This project is a part of the DevBond200 a Techinical Event in UniversuMM 2021 (
 
 More information at [UniversuMM](https://universumm.mmumullana.org/technical.php)
 
+
+## Changes we added (Team : TechnoGeeks)
+
+1. Added Navbar
+2. Costomised Logo
+3. Added Dark Mode
+4. Used Cards
+5. Added Delete Option
+6. Overall Improved Look Of the application
+
+
+
+
+
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com/) and Latest Version of any web browser(prefered Chrome or Firefox) installed on your computer.
