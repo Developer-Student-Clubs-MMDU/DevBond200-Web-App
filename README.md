@@ -4,27 +4,14 @@ This project is a part of the DevBond200 a Techinical Event in UniversuMM 2021 (
 
 More information at [UniversuMM](https://universumm.mmumullana.org/technical.php)
 
-## How To Use
+# Features Added
+Auto Hide Unnecessary Elements
+More easy to Use, for small devices
+Aded Task Details field
 
-To clone and run this application, you'll need [Git](https://git-scm.com/) and Latest Version of any web browser(prefered Chrome or Firefox) installed on your computer.
 
-      # Clone this repository
-      $ git clone https://github.com/Developer-Student-Clubs-MMDU/DevBond200-Web-App.git
+# Screenshot
 
-      # Go into the repository
-      $ cd DevBond200-Web-App
-
-      # Run the app
-      # Open the index.html file in the web browser
-
-## Contribute
-
-1. Fork the repository here on GitHub.
-1. Clone the repository on your system.
-1. Develop and test your changes.
-1. Commit your changes and make sure your commit message clearly describe your changes.
-1. Send a pull request.
-
-For help getting started with the project, view
-[Mozilla's documentation](https://flutter.dev/docs) on Web, which offers tutorials,
-samples, guidance on web development, and a full API reference.
+![Alt text](/img/1.jpg?raw=true "Optional Title")
+![Alt text](/img/2.jpg?raw=true "Optional Title")
+![Alt text](/img/3.jpg?raw=true "Optional Title")
