@@ -91,10 +91,11 @@ textarea {
 
 .task {
 	margin-top: 6px;
-	padding: 4px;
+	padding: 10px;
 	width: 100%;
 	min-height: 26px;
-	background-color: hsl(207, 10%, 95%);
+	border-radius: 6px;
+	background-color: hsl(207, 10%, 90%);
 }
 
 @media screen and (max-width: 500px) {
