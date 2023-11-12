@@ -7,25 +7,58 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>UniversuMM - ToDo App</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+   <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
 </head>
 
-<body>
+<body data-theme="light" id="HTML">
    <header id="header">
-      <h1>To-Do App</h1>
+      <h1>To-Do List</h1>
    </header>
-
-   <form class="task-form">
-      <textarea name="task-input" id="task-input" autofocus></textarea>
-      <input type="button" value="ADD TASK" id="task-add">
-   </form>
 
    <main class="tasks-wrapper">
       <h2>Tasks</h2>
       <ul id="task-list"></ul>
    </main>
+   <form class="task-form">
+      <textarea name="task-input" id="task-input" autofocus></textarea>
+      <input type="button" value="ADD TASK" id="task-add">
+   </form>
+   <div class="switch position" >
+      <input  type="checkbox" class="darking" id="checkbox">
+      <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+      </label>
+  </div>
 
 
    <script src="app.js"></script>
+   <script>
+      const changeThemeToDark = () => {
+    document.getElementById("HTML").setAttribute("data-theme", "dark") // set theme to dark
+    localStorage.setItem("data-theme", "dark") // save theme to local storage
+      }
+      const changeThemeToLight = () => {
+    document.getElementById("HTML").setAttribute("data-theme", "light") // set theme light
+    localStorage.setItem("data-theme", 'light') // save theme to local storage
+      }
+      const checkbox = document.getElementById("checkbox");
+let bleh;
+checkbox.addEventListener('change', () => {
+    let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
+    if (theme ==='dark'){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
+    }   
+    bleh = localStorage.getItem('data-theme');
+});
+   </script>
 </body>
 
 </html>

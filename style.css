@@ -1,4 +1,7 @@
 /* Reset Browser Default CSS */
+html{
+	background-color: var(--navigationbg);
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -18,21 +21,32 @@ body,
 textarea {
 	font-family: sans-serif;
 }
+ body{
+	background-color: var(--navigationbg);
+ }
+ textarea{
+	 background-color: lightgray;
+ }
 
 /* Custom Properties */
 :root {
 	--theme-border: 1px solid #ddd;
 	--primary-color: hsl(207, 90%, 54%);
 }
-
 #header {
-	width: 100%;
-	height: 60px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	border-bottom: var(--theme-border);
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: var(--theme-border);
+    background-color:var(--intext);
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
 }
 
 .task-form {
@@ -57,6 +71,7 @@ textarea {
 #task-input:focus {
 	background: none;
 	border: 1px solid var(--primary-color);
+	background-color: lightgrey;
 }
 
 #task-add {
@@ -64,8 +79,8 @@ textarea {
 	display: block;
 	width: 100%;
 	height: 30px;
-	background-color: var(--primary-color);
-	color: #fff;
+	background-color:var(--intext);
+	color:black;
 	border-radius: 4px;
 	cursor: pointer;
 }
@@ -75,18 +90,20 @@ textarea {
 }
 
 .tasks-wrapper {
-	margin: auto;
-	padding: 12px;
-	width: 80%;
-	border: var(--theme-border);
-	border-radius: 10px;
+    margin: auto;
+	margin-top: 2rem;
+    padding: 1rem;
+    width: 50%;
+    border: var(--theme-border);
+    border-radius: 10px;
 }
-
 .tasks-wrapper h2 {
+	align-items: center;
 	margin-bottom: 10px;
 	font-size: 1.4rem;
 	font-weight: normal;
 	border-bottom: 1px solid #000;
+	color: var(--clocktext);
 }
 
 .task {
@@ -99,6 +116,101 @@ textarea {
 
 @media screen and (max-width: 500px) {
 	.tasks-wrapper {
-		width: 95%;
+		width: 50%;
 	}
+}
+:root{
+	--black: #000000;
+	--white: #ffffff;
+	--minty: #93e9be;
+	--nminty: #6c1641;
+	--lightgrey: #e2e8f0 ;
+	--minty2: #78c2ad;
+	--nminty2: #873d52;
+	--fcgrey: #888888;
+	--eblue: #9099aa;
+	--leblue: #2477f2;
+	--formgrey: #36404d;
+	--grey: grey;
+	--lsblack: rgba(0,0,0,0.15);
+	--dswhite:rgba(255, 245, 245, 0.15);
+	--ltoday: rgb(229, 255, 229);
+	--dtoday: #743353;
+	 
+} 
+body[data-theme='light'] {
+    --navigationbg: var(--white);
+    --intext: var(--minty);
+    --clocktext: var(--black);
+    --panellogos: var(--minty);
+    --ftext: var(--black);
+    --copyright: var(--black);
+    --ldshadow: var(--lsblack);
+}
+
+body[data-theme='dark'] {
+    --navigationbg: var(--black);
+    --intext: var(--nminty);
+    --clocktext: var(--white);
+    --panellogos: var(--nminty);
+    --ftext: var(--white);
+    --copyright: var(--lightgrey);
+    --ldshadow: var(--dswhite);
+}
+
+* {
+    transition: background-color 0.3s ease, color 1s ease;
+  }
+*{
+    box-sizing: border-box;
+}
+
+
+.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+}
+
+.position{
+    position:fixed;
+    bottom: 1vh;
+    right:1rem;
+    z-index: 1000;
+}
+
+.darking{
+    position: absolute;
+    opacity: 0;
+}
+
+.darking:checked +.label .ball{
+    transform: translateX(24px);
+
+}
+
+.ball{
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
 }
